@@ -18,10 +18,26 @@ public class HomePage {
     }
 
     //locators
-    private By loginPage = By.linkText("Form Authentication");
+//    private By loginPage = By.linkText("Form Authentication");
+//    private By dropdownLink = By.linkText("Dropdown");
 
     //Methods
-    public void clickLoginLink(){
-        driver.findElement(loginPage).click();
+//    public void clickLoginLink(){
+//        driver.findElement(loginPage).click();
+//    }
+//    public void clickDropdownLink(){
+//        driver.findElement(dropdownLink).click();
+//    }
+    public void clickLogin(){
+        clickLink("Form Authentication");
+    }
+    public void clickDropdown(){
+        clickLink("Dropdown");
+    }
+    public void clickFramesLink(){
+        clickLink("Frames");
+    }
+    public void clickLink(String link){
+        driver.findElement(By.linkText(link)).click();
     }
 }

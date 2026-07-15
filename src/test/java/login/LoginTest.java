@@ -30,7 +30,7 @@ public class LoginTest {
         securePage = new SecurePage(driver);
 
         driver.get("https://the-internet.herokuapp.com");
-        homePage.clickLoginLink();
+        homePage.clickLogin();
 
         //Method Channing
         loginPage.login("tomsmith", "SuperSecretPassword!").SubmitLoginForm();
