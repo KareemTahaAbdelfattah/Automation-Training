@@ -37,6 +37,9 @@ public class HomePage {
     public void clickFramesLink(){
         clickLink("Frames");
     }
+    public void clickDynamicLoadingLink(){
+        clickLink("Dynamic Loading");
+    }
     public void clickLink(String link){
         driver.findElement(By.linkText(link)).click();
     }
