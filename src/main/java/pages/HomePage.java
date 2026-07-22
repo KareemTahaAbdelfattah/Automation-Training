@@ -40,6 +40,18 @@ public class HomePage {
     public void clickDynamicLoadingLink(){
         clickLink("Dynamic Loading");
     }
+    public void clickInfiniteScrollLink(){
+        clickLink("Infinite Scroll");
+    }
+    public void clickJavaScriptAlertLink(){
+        clickLink("JavaScript Alerts");
+    }
+    public void clickMultipleWindowsLink(){
+        clickLink("Multiple Windows");
+    }
+    public void clickNotificationMessageLink(){
+        clickLink("Notification Messages");
+    }
     public void clickLink(String link){
         driver.findElement(By.linkText(link)).click();
     }
